@@ -18,7 +18,7 @@ function App() {
 
     return (
         <div className="wrap">
-            <section id="counter">
+            <section id="counter-app">
                 <h1 className="title">Counter App</h1>
                 <CounterInput onAdd={addCounter} />
                 <CounterList counters={counters} onCounterUpdate={updateCounter} />
