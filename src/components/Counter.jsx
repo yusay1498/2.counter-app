@@ -2,11 +2,11 @@ import React from 'react';
 
 function Counter({ counter, onIncrement, onDecrement }) {
     return (
-        <div>
-            <h2>{counter.name}</h2>
-            <button onClick={onDecrement}>-</button>
-            <span>{counter.value}</span>
-            <button onClick={onIncrement}>+</button>
+        <div className="counter-container">
+            <h2 className="counter-name">{counter.name}</h2>
+            <button className="counter-button decrement" onClick={onDecrement}>-</button>
+            <span className="counter-value">{counter.value}</span>
+            <button className="counter-button increment" onClick={onIncrement}>+</button>
         </div>
     );
 }

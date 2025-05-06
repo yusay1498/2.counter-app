@@ -3,7 +3,7 @@ import Counter from './Counter';
 
 function CounterList({ counters, onCounterUpdate }) {
     return (
-        <div>
+        <div className="counter-list">
             {counters.map((counter, index) => (
                 <Counter
                     key={index}
