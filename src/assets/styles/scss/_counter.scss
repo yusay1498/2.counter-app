@@ -1,13 +1,26 @@
 .counter-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 10px 0;
+  width: 100%; /* 親要素の幅を100%に設定して中央揃え */
+  max-width: 450px; /* 最大幅を設定して中央揃え */
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
 }
 
 .counter-name {
-  font-size: 1.5em;
-  margin-right: 10px;
+  flex: 1;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
 }
 
 .counter-button {
