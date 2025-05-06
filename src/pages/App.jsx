@@ -17,10 +17,12 @@ function App() {
     };
 
     return (
-        <div>
-            <h1>Counter App</h1>
-            <CounterInput onAdd={addCounter} />
-            <CounterList counters={counters} onCounterUpdate={updateCounter} />
+        <div className="wrap">
+            <section id="counter">
+                <h1>Counter App</h1>
+                <CounterInput onAdd={addCounter} />
+                <CounterList counters={counters} onCounterUpdate={updateCounter} />
+            </section>
         </div>
     );
 }
